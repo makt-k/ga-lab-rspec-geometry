@@ -31,4 +31,24 @@ describe Geometry::Triangle do
       expect(triangle.area).to eq 6
     end
   end
+
+  describe '#valid?'do
+    it 'validates that the shape is a valid triangle' do
+      triangle = Geometry::Triangle.new
+      triangle.sideA = 3
+      triangle.sideB = 4
+      triangle.sideC = 5
+      expect triangle.valid?.should == true
+    end
+  end
+
+  describe '#valid?'do
+    it 'validates that the shape is a valid triangle' do
+      triangle = Geometry::Triangle.new
+      triangle.sideA = 20
+      triangle.sideB = 1
+      triangle.sideC = 1
+      expect triangle.valid?.should == false
+    end
+  end
 end

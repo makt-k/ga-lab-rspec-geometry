@@ -28,5 +28,14 @@ describe Geometry::Rectangle do
       expect(rectangle.area).to eq 50 # for rectangle sides, 10, 10, 5, 5
     end
   end
+
+    describe '#area' do
+    it 'multiplies the length and the width to get the area' do
+      rectangle = Geometry::Rectangle.new
+      rectangle.length = 5
+      rectangle.width = 3
+      expect(rectangle.area).to eq 15
+    end
+  end
 end
 

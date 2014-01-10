@@ -16,6 +16,10 @@ module Geometry
       Math.sqrt(semi * (semi - sideA) * (semi - sideB) * (semi - sideC))
     end
 
+    def valid?
+      sideA + sideB > sideC == true
+      sideA + sideC > sideB == true
+      sideB + sideC > sideA == true
+    end
   end
 end
-
