@@ -51,4 +51,14 @@ describe Geometry::Triangle do
       expect triangle.valid?.should == false
     end
   end
+
+  describe '#angle_a'do
+    it 'finds the angle across from side A' do
+      triangle = Geometry::Triangle.new
+      triangle.sideA = 5.5
+      triangle.sideB = 5.5
+      triangle.sideC = 5.5
+      expect(triangle.angle_a).to eq 59.99999999999999
+    end
+  end
 end
