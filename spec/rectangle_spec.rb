@@ -16,7 +16,7 @@ describe Geometry::Rectangle do
       rectangle = Geometry::Rectangle.new
       rectangle.length = 31
       rectangle.width = 16
-      expect(rectangle.perimeter).to eq 94 # for rectangle sides, 31, 31, 16, 16
+      expect(rectangle.perimeter).to eq 94 # for rectangle sides, 10, 10, 5, 5
     end
   end
 
@@ -26,14 +26,6 @@ describe Geometry::Rectangle do
       rectangle.length = 10
       rectangle.width = 5
       expect(rectangle.area).to eq 50 # for rectangle sides, 10, 10, 5, 5
-    end
-  end
-    describe '#area' do
-    it 'multiplies the length and the width to get the area' do
-      rectangle = Geometry::Rectangle.new
-      rectangle.length = 31
-      rectangle.width = 16
-      expect(rectangle.area).to eq 496 # for rectangle sides, 31, 31, 16, 16
     end
   end
 end

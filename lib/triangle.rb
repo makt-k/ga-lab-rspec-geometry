@@ -10,6 +10,12 @@ module Geometry
     def perimeter
       sideA + sideB + sideC
     end
+
+    def area
+      semi = (sideA + sideB + sideC) / 2
+      Math.sqrt(semi * (semi - sideA) * (semi - sideB) * (semi - sideC))
+    end
+
   end
 end
 

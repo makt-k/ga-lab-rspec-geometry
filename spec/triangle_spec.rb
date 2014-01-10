@@ -10,13 +10,25 @@ describe Geometry::Triangle do
       triangle.sideC = 5
       expect(triangle.perimeter).to eq 12 # for a triangle with sides 3, 4, 5
     end
+  end
 
+   describe '#perimeter' do
       it 'adds the length of the sides' do
       triangle = Geometry::Triangle.new
       triangle.sideA = 8
       triangle.sideB = 15
       triangle.sideC = 17
       expect(triangle.perimeter).to eq 40 # for a triangle with sides 8,15,17
+    end
+  end
+
+  describe '#area' do
+     it 'Heron theorm' do
+      triangle = Geometry::Triangle.new
+      triangle.sideA = 3
+      triangle.sideB = 4
+      triangle.sideC = 5
+      expect(triangle.area).to eq 6
     end
   end
 end
