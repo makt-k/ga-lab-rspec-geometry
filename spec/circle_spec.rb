@@ -19,5 +19,18 @@ describe Geometry::Circle do
     end
   end
 
-
+  describe '#area' do
+    it 'calculate the area by multiplying radius squared with PI' do
+      circle = Geometry::Circle.new
+      circle.radius = 4
+      expect(circle.area).to eq 50.26548245743669
+    end
+  end
+  describe '#area' do
+    it 'calculate the area by multiplying radius squared with PI' do
+      circle = Geometry::Circle.new
+      circle.radius = 2
+      expect(circle.area).to eq 12.566370614359172
+    end
+  end
 end

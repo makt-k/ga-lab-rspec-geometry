@@ -10,10 +10,7 @@ module Geometry
     end
 
     def area
+      Math::PI * (@radius * @radius)
     end
-
   end
 end
-
-
-# must do this Geometry::Triangle.new
