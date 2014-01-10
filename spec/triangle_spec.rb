@@ -16,7 +16,7 @@ describe Geometry::Triangle do
       triangle.sideA = 8
       triangle.sideB = 15
       triangle.sideC = 17
-      expect(triangle.perimeter).to eq 40 # for a triangle with sides 3, 4, 5
+      expect(triangle.perimeter).to eq 40 # for a triangle with sides 8,15,17
     end
   end
 end
